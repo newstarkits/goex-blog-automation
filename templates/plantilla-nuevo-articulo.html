@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- METADATOS: El sistema de blog lee automáticamente estas etiquetas para indexar el artículo -->
+  <title>GOEX · Título de tu nuevo artículo de blog</title>
+  <meta name="description" content="Breve resumen de 2 o 3 líneas que aparecerá en la tarjeta de previsualización del blog." />
+  <meta name="category" content="Inteligencia Artificial" />
+  <meta name="date" content="16 Nov 2026" />
+  <meta name="reading-time" content="4 min" />
+  <meta name="image" content="../images/servicio_ia_automatizacion.jpg" />
+  
+  <link rel="icon" type="image/png" href="../images/favicon.png" />
+  <link href="../goex-header.css" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #fafaf7;
+      --paper: #ffffff;
+      --ink: #14130f;
+      --text: #3c3a36;
+      --muted: #6b6862;
+      --line: #e7e3d9;
+      --gold: #8B7FE0;
+      --gold-light: #C4BCF8;
+      --gold-soft: rgba(139, 127, 224, 0.10);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: Inter, system-ui, sans-serif; line-height: 1.65; }
+    .wrap { width: min(860px, calc(100% - 40px)); margin: 0 auto; }
+    .article-nav { padding: 32px 0 16px; }
+    .back-link { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 700; color: var(--gold); text-decoration: none; }
+    .article-header { padding: 20px 0 36px; border-bottom: 1px solid var(--line); }
+    .meta-badges { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
+    .badge-cat { font-size: 11px; font-weight: 800; text-transform: uppercase; padding: 5px 12px; border-radius: 999px; background: var(--gold-soft); color: var(--gold); }
+    .meta-item { font-size: 13px; color: var(--muted); }
+    .article-header h1 { font-size: clamp(28px, 4.2vw, 42px); font-weight: 900; line-height: 1.2; color: var(--ink); margin-bottom: 20px; }
+    .article-header .lead { font-size: 18px; line-height: 1.6; color: #55524c; font-weight: 500; }
+    .article-cover { width: 100%; height: 400px; border-radius: 24px; overflow: hidden; margin: 36px 0; border: 1px solid var(--line); }
+    .article-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .article-body { padding: 10px 0 60px; }
+    .article-body h2 { font-size: 24px; font-weight: 850; color: var(--ink); margin: 38px 0 16px; }
+    .article-body h3 { font-size: 19px; font-weight: 800; color: var(--ink); margin: 28px 0 12px; }
+    .article-body p { font-size: 16px; line-height: 1.75; margin-bottom: 20px; }
+    .article-body ul, .article-body ol { margin: 0 0 24px 22px; }
+    .article-body li { font-size: 15.5px; line-height: 1.7; margin-bottom: 10px; }
+    .article-cta { background: #14130f; color: #fff; border-radius: 24px; padding: 44px 38px; margin: 50px 0 20px; text-align: center; }
+    .article-cta h3 { font-size: 26px; font-weight: 900; margin-bottom: 12px; }
+    .article-cta p { font-size: 15.5px; color: #c5c0b5; margin-bottom: 28px; }
+    .btn-gold { display: inline-flex; padding: 13px 28px; border-radius: 999px; background: linear-gradient(135deg, #7A6CD6 0%, #A397EB 100%); color: #fff; font-weight: 700; text-decoration: none; }
+    footer { background: #11110f; color: #8c8880; padding: 50px 0 40px; font-size: 13px; margin-top: 60px; }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 30px; }
+    .footer-grid h4 { color: #fff; margin-bottom: 14px; }
+    .footer-grid a { color: inherit; text-decoration: none; }
+    @media(max-width: 768px) { .article-cover { height: 240px; } .footer-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="goex-header-wrapper">
+    <div class="goex-header-bar">
+      <a class="goex-brand-link" href="../index.html">
+        <img class="goex-brand-icon" src="../images/logo_oficial_negro.png" alt="GOEX" />
+        <span class="goex-brand-text">GOEX</span>
+      </a>
+      <ul class="goex-nav-menu">
+        <li class="goex-nav-item"><a class="goex-nav-link" href="../index.html">Inicio</a></li>
+        <li class="goex-nav-item"><a class="goex-nav-link" href="../servicios/servicios.html">Qué hacemos</a></li>
+        <li class="goex-nav-item"><a class="goex-nav-link" href="../demos/demos.html">Demos</a></li>
+        <li class="goex-nav-item"><a class="goex-nav-link" href="../casos-de-exito/casos-de-exito.html">Casos de éxito</a></li>
+        <li class="goex-nav-item"><a class="goex-nav-link active" href="blog.html">Blog</a></li>
+        <li class="goex-nav-item"><a class="goex-nav-link" href="../recursos/recursos.html">Recursos</a></li>
+        <li class="goex-nav-item"><a class="goex-nav-link" href="../nosotros/nosotros.html">Nosotros</a></li>
+        <li class="goex-nav-item"><a class="goex-nav-link" href="../trabaja-con-goex/trabaja-con-goex.html">Trabaja con nosotros</a></li>
+<li class="goex-nav-item"><a class="goex-nav-link" href="../contacto/contacto.html">Contacto</a></li>
+      </ul>
+      <a class="goex-cta-btn" href="../contacto/contacto.html">Agenda tu auditoría</a>
+      <button class="goex-mobile-toggle" onclick="document.getElementById('goexMobileDrawer').classList.toggle('open')">Menu</button>
+    </div>
+    <div class="goex-mobile-drawer" id="goexMobileDrawer">
+      <a class="goex-nav-link" href="../index.html">Inicio</a>
+      <a class="goex-nav-link" href="../servicios/servicios.html">Qué hacemos</a>
+      <a class="goex-nav-link" href="../demos/demos.html">Demos</a>
+      <a class="goex-nav-link" href="../casos-de-exito/casos-de-exito.html">Casos de éxito</a>
+      <a class="goex-nav-link active" href="blog.html">Blog</a>
+      <a class="goex-nav-link" href="../recursos/recursos.html">Recursos</a>
+      <a class="goex-nav-link" href="../nosotros/nosotros.html">Nosotros</a>
+      <a class="goex-nav-link" href="../trabaja-con-goex/trabaja-con-goex.html">Trabaja con nosotros</a>
+<a class="goex-nav-link" href="../contacto/contacto.html">Contacto</a>
+      <a class="goex-cta-btn" href="../contacto/contacto.html">Agenda tu auditoría</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="article-nav">
+      <a class="back-link" href="blog.html">← Volver a todos los artículos</a>
+    </div>
+
+    <article>
+      <header class="article-header">
+        <div class="meta-badges">
+          <span class="badge-cat">Inteligencia Artificial</span>
+          <span class="meta-item">📅 16 Nov 2026</span>
+          <span class="meta-item">⏱ 4 min de lectura</span>
+        </div>
+        <h1>Título de tu nuevo artículo</h1>
+        <p class="lead">Entradilla o párrafo destacado que introduce el tema del artículo de forma clara y directa.</p>
+      </header>
+
+      <div class="article-cover">
+        <img src="../images/servicio_ia_automatizacion.jpg" alt="Imagen del artículo" />
+      </div>
+
+      <div class="article-body">
+        <h2>Primer subtítulo</h2>
+        <p>Escribe aquí el contenido de tu artículo. Puedes añadir párrafos, listas o imágenes según lo necesites.</p>
+
+        <h2>Segundo subtítulo</h2>
+        <p>Más información y explicaciones detalladas para los lectores.</p>
+
+        <div class="article-cta">
+          <h3>¿Quieres aplicar esto a tu empresa?</h3>
+          <p>En GOEX analizamos tu operativa y te proponemos soluciones reales de IA y automatización.</p>
+          <a class="btn-gold" href="../contacto/contacto.html">Agenda una auditoría gratuita →</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap footer-grid">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+          <img alt="Logo GOEX" src="../images/logo_oficial_blanco.png" style="height:32px;width:auto;object-fit:contain;">
+          <span style="font-size:22px;font-weight:900;letter-spacing:-.03em;color:#fff;">GOEX</span>
+        </div>
+        <p>IA, automatización y marketing para hacer crecer negocios.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <p><a href="../index.html">Inicio</a></p>
+        <p><a href="../servicios/servicios.html">Qué hacemos</a></p>
+        <p><a href="../demos/demos.html">Demos</a></p>
+        <p><a href="../casos-de-exito/casos-de-exito.html">Casos de éxito</a></p>
+        <p><a href="blog.html">Blog</a></p>
+        <p><a href="../recursos/recursos.html">Recursos</a></p>
+        <p><a href="../nosotros/nosotros.html">Nosotros</a></p>
+        <p><a href="../trabaja-con-goex/trabaja-con-goex.html">Trabaja con nosotros</a></p>
+        <p><a href="../contacto/contacto.html">Contacto</a></p>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <p>Agentes de voz</p>
+        <p>Automatizaciones</p>
+        <p>Publicidad</p>
+        <p>Redes sociales</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p><a href="mailto:info@goex-ia.com">info@goex-ia.com</a></p>
+        <p>+34 602 03 31 21</p>
+        <p style="color:#777;font-size:12px">España y online</p>
+        <p style="color:#777;font-size:12px">Todos los días, de 9:00 a 20:00</p>
+        <p><a href="../contacto/contacto.html" style="color:var(--gold);font-weight:700">Agenda una auditoría →</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="../gemini-chat.js"></script>
+</body>
+
+</html>
